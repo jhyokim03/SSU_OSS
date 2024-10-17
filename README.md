@@ -14,5 +14,4 @@
 >   >3. 편의성 : 크롬 확장 프로그램
 >
 >3.참조
->
 >[Github]: https://github.com/KPF-bigkinds/BIGKINDS-LAB "언론진흥재단 검증 모델 오픈소스"
