@@ -1,28 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "내 크롬 확장 프로그램",
+    "name": "뉴스링커",
     "version": "1.0",
-    "description": "이 확장 프로그램은 예시를 보여줍니다.",
-    "permissions": [
-      "storage",
-      "tabs"
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
-      }
-    },
+    "description": "유튜브 콘텐츠 관련 뉴스 연결",
+    "permissions": ["storage"], 
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "background.js" 
+    },
+    "action": {
+        "default_popup": "practice.html", 
+        "default_icon": "youtube.png" 
+    },
+    "icons": {
+        "48": "youtube.png" 
     },
     "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"] 
+        }
     ]
-  }
-  
+}
